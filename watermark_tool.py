@@ -12,7 +12,7 @@ from datetime import datetime
 import glob
 
 def get_exif_date(image_path):
-    """从图片EXIF信息中获取拍摄日期"""
+    """从图片EXIF中获取拍摄日期 """
     try:
         exif_dict = piexif.load(image_path)
         
