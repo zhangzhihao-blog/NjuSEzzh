@@ -109,7 +109,7 @@ def add_watermark_to_image(image_path, output_path, font_size=36, color='white',
         print(f"处理图片 {image_path} 时出错: {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description='为图片添加拍摄日期水印')
+    parser = argparse.ArgumentParser(description='为图片添加拍摄日期')
     parser.add_argument('image_path', help='图片文件路径或目录路径')
     parser.add_argument('--font_size', type=int, default=36, help='字体大小（默认: 36）')
     parser.add_argument('--color', default='white', help='水印颜色（默认: white）')
